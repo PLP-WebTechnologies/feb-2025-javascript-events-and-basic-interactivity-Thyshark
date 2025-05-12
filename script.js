@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const clickOutput = document.getElementById('click-output');
     
     clickMeButton.addEventListener('click', function() {
-        clickOutput.textContent = "Button was clicked! 🎉";
+        clickOutput.textContent = "Button was clicked! ";
         clickOutput.style.color = "#2ecc71";
         
         // Reset after 2 seconds
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const hoverOutput = document.getElementById('hover-output');
     
     hoverBox.addEventListener('mouseenter', function() {
-        hoverOutput.textContent = "You're hovering! 🚀";
+        hoverOutput.textContent = "You're hovering! ";
     });
     
     hoverBox.addEventListener('mouseleave', function() {
@@ -58,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     secretBox.addEventListener('mousedown', function() {
         pressTimer = setTimeout(() => {
-            secretOutput.textContent = "You held it long! 🎊";
+            secretOutput.textContent = "You held it long! ";
             secretOutput.classList.remove('hidden');
             
             setTimeout(() => {
                 secretOutput.classList.add('hidden');
-                secretOutput.textContent = "🎉 You found the secret message!";
+                secretOutput.textContent = " You found the secret message!";
             }, 3000);
         }, longPressTime);
     });
